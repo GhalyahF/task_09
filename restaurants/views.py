@@ -19,7 +19,7 @@ def signup(request):
     context ={
         "form":form,
     }
-    return render(request, 'list.html', context)
+    return render(request, 'signup.html', context)
 
 
 
@@ -47,7 +47,7 @@ def signin(request):
 def signout(request):
     logout(request)
 
-    return redirect(request, 'logout')
+    return redirect('restaurant-list')
 
 def restaurant_list(request):
     context = {
