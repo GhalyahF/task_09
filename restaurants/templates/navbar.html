@@ -9,6 +9,16 @@
       <li class="nav-item">
         <a class="nav-link" href="{% url 'restaurant-create' %}">Create Restaurant</a>
       </li>
+
+
+     <!--display signed in user-->
+
+       <li class="nav-item">
+        <a class="nav-link" href="#">{{request.user}}</a>
+      </li>
+
+
+
     </ul>
     
     <form class="form-inline my-2 my-lg-0">
